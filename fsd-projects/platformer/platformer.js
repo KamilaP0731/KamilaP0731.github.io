@@ -26,21 +26,32 @@ $(function () {
     // ONLY CHANGE BELOW THIS POINT //
     //////////////////////////////////
 
-    // TODO 1 - Enable the Grid
-    // toggleGrid();
+   function setup() {
+
+  // TODO 1 - Enable the Grid
+  toggleGrid();
 
 
-    // TODO 2 - Create Platforms
+  // TODO 2 - Create Platforms
+createPlatform(200,600,150,12,"pink");
+createPlatform(500,500,130,12,"pink");
+createPlatform(100,640,100,12,"lightpink");
+createPlatform(350,550,100,12,"hotpink");
+createPlatform(700,450, 100,12,"pink");
+createPlatform(550,370, 100,12,"lightpink");
+createPlatform(470,270, 100,12,"hotpink");
+    //  createPlatform(600,270, 100,12,"pink")
+  // TODO 3 - Create Collectables
+  createCollectable("max",395,451,300);
+  createCollectable("database", 575, 283);
+  createCollectable("kennedi", 500, 183);
 
 
-
-
-    // TODO 3 - Create Collectables
-
-
-
-    
-    // TODO 4 - Create Cannons
+  // TODO 4 - Create Cannons
+createCannon("right", 300, 1500);
+createCannon("top", 300, 2000);
+createCannon("right", 350, 2000);
+}
 
 
     
